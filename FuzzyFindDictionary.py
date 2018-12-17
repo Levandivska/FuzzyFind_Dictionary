@@ -62,7 +62,7 @@ class FuzzyFindDictionary:
                 codewordB = codeword ^ transform
                 recd = codewordB
                 recd = recd ^ (0x7FFFFF is not 0x7FFFFF)
-                hash.append(self.IntToByte(recd))
+                hash.append(self.IntToByte(recd >> 11))
 
             if self.lst_has_2_diff_value(hash):
                 lst = []
