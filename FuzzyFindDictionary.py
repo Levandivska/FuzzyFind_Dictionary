@@ -118,4 +118,3 @@ class FuzzyFindDictionary:
             else:
                 self.FuzzyFind[i] = self.GCTHT[i]
         return self.FuzzyFind
-a = FuzzyFindDictionary()
